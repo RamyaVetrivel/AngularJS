@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+<!--To display content using ng show-->
+<p ng-show="true">Fun Learning by show</p>
+
+<!--To hide content using ng show-->
+<p ng-show="false">Fun Learning by show</p>
+
+<!--To display content using ng hide-->
+<p ng-hide="true">Fun Learning by hide</p>
+
+<!--To hide content using ng hide-->
+<p ng-hide="false">Fun Learning by hide</p>
+
+<!--To display content using ng if-->
+<p ng-if="true">Fun Learning by if</p>
+
+<!--To display content using ng if-->
+<p ng-if="false">Fun Learning by if</p>
+
+</div>
+
+</body>
+</html>
