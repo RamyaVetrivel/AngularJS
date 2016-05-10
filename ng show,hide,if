@@ -10,10 +10,10 @@
 <!--To hide content using ng show-->
 <p ng-show="false">Fun Learning by show</p>
 
-<!--To display content using ng hide-->
+<!--To hide content using ng hide-->
 <p ng-hide="true">Fun Learning by hide</p>
 
-<!--To hide content using ng hide-->
+<!--To display content using ng hide-->
 <p ng-hide="false">Fun Learning by hide</p>
 
 <!--To display content using ng if-->
