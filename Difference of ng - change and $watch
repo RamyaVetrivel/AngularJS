@@ -1,0 +1,25 @@
+ Well both are used to find the change in model
+ 
+ you would normally bind ngChange to some HTML element(input element). While $watch is for the models(controler part).
+ 
+ But even in their application they differ.
+
+When you use $watch the watched expression will be evaluated on every digest cycle, and if there is a change, the handler is invoked.
+
+With ng-change, the handler is invoked explicitly in response to an event.
+
+With $watch, change can come from anywhere: user action, controller function, service - all will trigger the handler.
+
+With ng-change, the change is restricted to a user action on a particular input element.
+
+It is worth to note also that ng-change works only in combination with ng-model - in other words, the ng-change expression is
+evaluated only when ngModel.$viewValue (refer to ngModelController documentation for more info) is changed, which typically happens
+in response to a user-initiated event.
+
+Why you shouldnt use $watch?
+It’s inefficient - Adding complexity to your $digest
+It’s hard to test effectively.
+It's not clean.
+
+
+ 
